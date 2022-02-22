@@ -2,18 +2,21 @@ server:
   error:
     include-message: always
     include-binding-errors: always
+  port: 8090
 
 spring:
   datasource:
-    password:taulogy1!
+    password: taulogy1!
     url: jdbc:postgresql://localhost:5432/LoginDB
-    username:postgres
-  joa:
+    username: postgres
+  jpa:
     hibernate:
       ddl-auto: create-drop
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgresSQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+
+
 
